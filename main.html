@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday !</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #bc72f9;
+            position: relative;
+        }
+        .side-gif {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 120px;
+            max-width: 20vw;
+            z-index: 10;
+            background: #bc72f9; /* Match body background */
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .side-gif .tenor-gif-embed {
+            background: #bc72f9 !important; /* Force background for embed */
+            margin: 0 !important;
+            padding: 0 !important;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .side-gif.left {
+            left: 10px;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 50vw;
+            max-width: 90vw;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            overflow: hidden;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .polaroid {
+            position: absolute;
+            width: 140px;              /* Medium size */
+            padding: 12px 12px 28px 12px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #333;
+            z-index: 2;
+        }
+        .polaroid img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        /* Adjust polaroid positions for medium size */
+        .polaroid1 { top: -15px; left: -150px; transform: rotate(-10deg);}
+        .polaroid2 { top: 10px; right: -150px; transform: rotate(8deg);}
+        .polaroid3 { bottom: 10px; left: -150px; transform: rotate(7deg);}
+        .polaroid4 { bottom: -10px; right: -150px; transform: rotate(-7deg);}
+    </style>
+</head>
+<body>
+    <div class="side-gif left">
+        <div class="tenor-gif-embed" data-postid="12061965794629949691" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+            <a href="https://tenor.com/view/love-happy-birthday-congrats-celebrate-birthday-gif-12061965794629949691">Love Happy Birthday Sticker</a>from 
+            <a href="https://tenor.com/search/love-stickers">Love Stickers</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="polaroid polaroid1">
+            <img src="Screenshot_2025-08-09-20-45-33-90_1c337646f29875672b5a61192b9010f9.jpg" alt="Memory 1">
+            <div></div>
+        </div>
+        <div class="polaroid polaroid2">
+            <img src="Screenshot_2025-09-01-02-21-13-87_1c337646f29875672b5a61192b9010f9.jpg" alt="Memory 2">
+            <div></div>
+        </div>
+        <div class="polaroid polaroid3">
+            <img src="IMG-20250903-WA0008.jpg" alt="Memory 3">
+            <div style="font-weight: bold; font-size: 20px;">HAPPY</div>
+        </div>
+        <div class="polaroid polaroid4">
+            <img src="Screenshot_2025-07-16-14-57-41-41_1c337646f29875672b5a61192b9010f9.jpg" alt="Memory 4">
+            <div style="font-weight: bold; font-size: 20px;">Birthday!!</div>
+        </div>
+        <div class="video-wrapper">
+            <video src="VID_20250903234227.mp4" controls controlsList="nodownload"></video>
+        </div>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</body>
+</html>
